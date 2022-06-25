@@ -1,4 +1,4 @@
-# The duck AI Blog Writer with OpenAI GPT-3
+# The duck AI Blog Writer with OpenAI GPT-3 davinci
 
 Create an AI blog writing tool with Open AI API.
 
