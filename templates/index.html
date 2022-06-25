@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>DuckAI</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5">The Duck Online blog writing tool by OpenAI</h1>
+
+      <p>
+        เครื่องมือเขียนบทความ เจ้าเป็ด จะช่วยให้คุณป้อนหัวข้อบทความและคำหลัก
+        และรับบทความเต็มรูปแบบกลับไปใช้ได้
+        โดยเครื่องมือนี้จะแสดงรายการแนวคิดหัวข้อให้เลือกทันที
+        เมื่อคุณเลือกหัวข้อแล้ว คุณสามารถสร้างบทความ AI เนื้อหาแบบเต็มได้
+        เครื่องมือนี้ถูกพัฒนาโดย fr4nk, Software Developer, Cradit : OpenAI
+        GPT-3 Davici
+      </p>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form class="" action="/" method="post">
+            <div class="mb-3">
+              <label for="blogTopic" class="form-label"
+                >คุณต้องการรับแนวคิดเกี่ยวกับบล็อกในหัวข้อใด?</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="blogTopic"
+                name="blogTopic"
+                placeholder="กรุณากรอกหัวข้อบล๊อคที่ต้องการ"
+              />
+            </div>
+            <input type="hidden" name="form1" value="form1" />
+
+            <button type="submit" id="blogTopicButton" class="btn btn-primary">
+              สร้างไอเดียบล็อก
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">{{blogTopicIdeas|safe}}</div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form class="" action="/" method="post">
+            <div class="mb-3">
+              <label for="blogSection" class="form-label"
+                >ป้อนหัวข้อบทความด้านล่างคุณเลือกที่ว่าจะเขียนเกี่ยวกับสิ่งใด</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="blogSection"
+                name="blogSection"
+                placeholder="ป้อนชื่อบทความเพื่อสร้างส่วนบนของบทความ"
+              />
+            </div>
+            <input type="hidden" name="form2" value="form2" />
+
+            <button type="submit" class="btn btn-primary">
+              สร้างส่วนบทความ
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">{{blogSectionIdeas|safe}}</div>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <div class="row">
+        <div class="col-lg-6">
+          <form class="" action="/" method="post">
+            <div class="mb-3">
+              <label for="blogExpander" class="form-label"
+                >ป้อนชื่อส่วนบทความที่คุณต้องการขยาย</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="blogExpander"
+                name="blogExpander"
+                placeholder="ใส่ชื่อส่วนบล็อก"
+              />
+            </div>
+            <input type="hidden" name="form3" value="form3" />
+
+            <button type="submit" class="btn btn-primary">
+              ขยายที่ชื่อเรื่อง
+            </button>
+          </form>
+        </div>
+
+        <div class="col-lg-6">{{blogExpanded|safe}}</div>
+      </div>
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
