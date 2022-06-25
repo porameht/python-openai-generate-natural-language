@@ -1,4 +1,6 @@
 import os
+
+from anyio import run_async_from_thread
 import openai
 import config
 
@@ -14,4 +16,8 @@ response = openai.Completion.create(
   presence_penalty=0
 )
 
-print(response)
+
+textReturned = run_async_from_thread['choices'][0]['text']
+print(textReturned)
+
+
