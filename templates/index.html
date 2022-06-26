@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DuckAI</title>
+    <title>DuckWriter.AI</title>
 
     <!-- Bootstrap CSS -->
     <link
@@ -60,19 +60,20 @@
           </form>
         </div>
 
-        <div class="col-lg-6">{{blogTopicIdeas|safe}}</div>
+        <div class="col-lg-6">1. {{blogTopicIdeas|safe}}</div>
       </div>
 
       <br />
       <hr />
       <br />
+      <!-- -------------------------------------------------------------- -->
 
       <div class="row">
         <div class="col-lg-6">
           <form class="" action="/" method="post">
             <div class="mb-3">
               <label for="blogSection" class="form-label"
-                >ป้อนหัวข้อบทความด้านล่างคุณเลือกที่ว่าจะเขียนเกี่ยวกับสิ่งใด</label
+                >ป้อนหัวข้อบทความที่คุณเลือกว่าต้องการเขียนเกี่ยวกับสิ่งใด</label
               >
               <input
                 type="text"
@@ -85,7 +86,7 @@
             <input type="hidden" name="form2" value="form2" />
 
             <button type="submit" class="btn btn-primary">
-              สร้างส่วนบทความ
+              สร้างส่วนของบทความ
             </button>
           </form>
         </div>
@@ -97,12 +98,14 @@
       <hr />
       <br />
 
+      <!-- -------------------------------------------------------------- -->
+
       <div class="row">
         <div class="col-lg-6">
           <form class="" action="/" method="post">
             <div class="mb-3">
               <label for="blogExpander" class="form-label"
-                >ป้อนชื่อส่วนบทความที่คุณต้องการขยาย</label
+                >ป้อนชื่อบทความที่คุณต้องการขยาย</label
               >
               <input
                 type="text"
@@ -115,7 +118,7 @@
             <input type="hidden" name="form3" value="form3" />
 
             <button type="submit" class="btn btn-primary">
-              ขยายที่ชื่อเรื่อง
+              ขยายชื่อบทความ
             </button>
           </form>
         </div>

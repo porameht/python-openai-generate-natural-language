@@ -1,0 +1,19 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "logprobs": null,
+      "text": "\n\n-Ways to get the most out of your casino online experience \n-The do's and don'ts of casino online gambling \n-The top 5 casino online games to play \n-The benefits of playing casino online \n-How to beat the odds at casino online gambling"
+    }
+  ],
+  "created": 1656161227,
+  "id": "cmpl-5MzTnCGsmBT4lwBvSyc7bItvtjM63",
+  "model": "text-davinci-002",
+  "object": "text_completion",
+  "usage": {
+    "completion_tokens": 64,
+    "prompt_tokens": 11,
+    "total_tokens": 75
+  }
+}
