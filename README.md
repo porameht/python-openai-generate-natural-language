@@ -1,6 +1,11 @@
 # The duck AI Blog Writer with OpenAI GPT-3 davinci
 
 Create an AI blog writing tool with Open AI API.
+- bootstrap
+- openai api GPT-3
+- flask
+
+<img width="1256" alt="Screen Shot 2565-06-26 at 19 30 08" src="https://user-images.githubusercontent.com/89307294/175814312-49a4fec0-5164-4da7-854f-c576dd1775e4.png">
 
 # Get Started with this repo
 
